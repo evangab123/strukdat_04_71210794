@@ -20,5 +20,5 @@ with open('mahasiswa.json','r') as file:
         data[nama].append({'Biodata':biodata})
         print("=== Data berhasil ditambahkan ===\n")      
 
-with open('mahasiswa.json','w') as file:
+with open('mahasiswa.json','a') as file:
      data = json.dump(data,file)   
